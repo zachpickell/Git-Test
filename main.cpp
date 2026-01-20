@@ -14,6 +14,17 @@ int sumNumber(int n)
   
 };
 
+int productNum(int n)
+{
+  int product = 0;
+  for (int i = 1; i <=n; i++)
+  {
+    product *= i;
+  }
+
+  return product;
+};
+
 int main()
 {
     int n;
@@ -22,7 +33,8 @@ int main()
     std::cin >> n;
     std::cout << std::endl;
 
-    std::cout <<  sumNumber(n) << std::endl;
+    std::cout << "The sum: " << sumNumber(n) << std::endl;
+    std::cout << "The product: " << productNum(n) << std::endl;
     
     return 0;
 };
