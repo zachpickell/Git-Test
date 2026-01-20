@@ -7,7 +7,7 @@ int sumNumber(int n)
   
   for (int i = 1; i <= n; i++)
   {
-    sum += i;
+    i += sum;
   }
 
   return sum;
@@ -22,7 +22,7 @@ int main()
     std::cin >> n;
     std::cout << std::endl;
 
-    std::cout <<  sumNumber(n) << std::endl;
+    sumNumber(n);
     
     return 0;
 };
